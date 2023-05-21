@@ -39,11 +39,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         CustomAuthenticationFilter customAuthenticationFilter=new CustomAuthenticationFilter(authenticationManagerBean());
-        customAuthenticationFilter.setFilterProcessesUrl("/api/login");
+        customAuthenticationFilter.setFilterProcessesUrl("/out/api/login");
         http.cors().and().headers().frameOptions().disable();
-        http.csrf().disable();
         http.sessionManagement().sessionCreationPolicy(STATELESS);
-        http.authorizeRequests().antMatchers("/api/login","/api/category/get","/api/token/refresh","/api/report/getTest/*","/api/attachment/file1/*","/api/attachment/*","/swagger-ui/*","/v2/api-docs/**","/swagger.json","/swagger-ui.html","/swagger-resources/**","/webjars/**").permitAll();
+        http.csrf().disable().httpBasic().disable();
+        http.authorizeRequests().antMatchers("/out/api/login","/out/api/attachment/*","/swagger-ui/*","/v2/api-docs/**","/swagger.json","/swagger-ui.html","/swagger-resources/**","/webjars/**","/out/api/user/signUp","/out/api/user/check","/out/api/user/resetCode","/out/api/user/resetPassword","/pdf/generate","/balance","/out/api/attachment/file1/*","/out/api/report/getReport/*","/out/api/payme/**").permitAll();
         http.authorizeRequests().anyRequest().authenticated();
         http.addFilter(customAuthenticationFilter);
         http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);

@@ -1,4 +1,4 @@
 FROM openjdk:17-alpine
-EXPOSE 8888
-ADD target/fergana.jar fergana.jar
-ENTRYPOINT ["java","-jar","fergana.jar"]
+EXPOSE 8899
+ADD target/home-kindergarten.jar home-kindergarten.jar
+ENTRYPOINT ["java","-jar","home-kindergarten.jar"]

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5305c93e-c19b-44af-9db1-97407bd5b36e" name="Changes" comment="" />
+    <list default="true" id="1bad6439-87cf-4338-aa58-113659423cc1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/optimal/fergana/Home_Kindergarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/optimal/fergana/Home_Kindergarten.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +19,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -31,52 +39,75 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2MDvliqAHRgS4weQVUEsEdE9inS" />
+  <component name="ProjectId" id="2M3lQt0EQgTTUIxe8dfh281mww6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Git hub/task/src/main/java/com/optimal/task/group&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;193b1e10aa1242025683fdec9d36ab94&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Excel (xlsx)",
+    "last_opened_file_path": "D:/Git hub/task/src/main/java/com/optimal/task",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "24de1dc16e3c2a7c68abae268e78ca53",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Git hub\task\src\main\java\com\optimal\task\group" />
       <recent name="D:\Git hub\task\src\main\java\com\optimal\task" />
-      <recent name="D:\Git hub\task\src\main\java\com\optimal\task\subject" />
-      <recent name="D:\Git hub\project_fergana\src\main\java\com\optimal\fergana" />
-      <recent name="D:\Git hub\project_fergana\src\main\java\com\optimal\fergana\inputOutput" />
+      <recent name="D:\Git hub\home_kindergarten\src\main\java\com\optimal\fergana\payme" />
+      <recent name="D:\Git hub\home_kindergarten\src\main\java\com\optimal\fergana" />
+      <recent name="D:\Git hub\home_kindergarten\src\main\java\com\optimal\fergana\reporter" />
+      <recent name="D:\Git hub\home_kindergarten\src\main\java\com\optimal\fergana\statics" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.optimal.bookstore.controller" />
-      <recent name="com.optimal.bookstore.discount" />
-      <recent name="com.optimal.bookstore.book" />
-      <recent name="com.optimal.bookstore.category" />
-      <recent name="com.optimal.fergana.reporter.pdf" />
+      <recent name="com.optimal.fergana.area" />
+      <recent name="com.optimal.fergana.product_price" />
+      <recent name="com.optimal.fergana.area.userPayments" />
+      <recent name="com.optimal.fergana.payme.json" />
+      <recent name="com.optimal.fergana.balance.paymentHistory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TaskApplication">
-    <configuration name="TaskApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.optimal.task.TaskApplication" />
-      <module name="fergana" />
+  <component name="RunManager" selected="Spring Boot.Task">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="home_kindergarten" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="home_kindergarten" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Home_Kindergarten" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="home-kinfergarten" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimal.fergana.Home_Kindergarten" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="home-kinfergarten" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimal.task.Task" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.optimal.task.*" />
@@ -87,49 +118,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="fergana" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimal.task.TaskApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TaskApplication" />
+        <item itemvalue="Spring Boot.Task" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5305c93e-c19b-44af-9db1-97407bd5b36e" name="Changes" comment="" />
-      <created>1677315123247</created>
+      <changelist id="1bad6439-87cf-4338-aa58-113659423cc1" name="Changes" comment="" />
+      <created>1677004134899</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677315123247</updated>
+      <updated>1677004134899</updated>
+      <workItem from="1677004136158" duration="187000" />
+      <workItem from="1677066068180" duration="773000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/optimal/task/config/RefreshTokenService.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="org.springframework.security.web.FilterChainProxy$VirtualFilterChain" memberName="originalChain" />
-      </pinned-members>
-    </pin-to-top-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="((HeaderWriterRequest)request).request" custom="org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterRequest" />
-        <watch expression="((SecurityContextPersistenceFilter)((java.util.ArrayList)((VirtualFilterChain)filterChain).additionalFilters).get(1)).servletContext" custom="org.springframework.security.web.FilterChainProxy.VirtualFilterChain,org.springframework.security.web.context.SecurityContextPersistenceFilter,java.util.ArrayList" />
+        <watch expression="this" />
+        <watch expression="split[1]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

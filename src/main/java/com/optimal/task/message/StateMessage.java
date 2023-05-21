@@ -1,14 +1,5 @@
 package com.optimal.task.message;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class StateMessage {
 
     private String text;
@@ -16,23 +7,45 @@ public class StateMessage {
     private Integer code;
 
 
-    public StateMessage successAdd() {
-        return new StateMessage("Muvofaqiyatli qo'shildi", true, 200);
+    public StateMessage(String text, boolean success, Integer code) {
+        this.text = text;
+        this.success = success;
+        this.code = code;
     }
 
-    public StateMessage successEdit() {
-        return new StateMessage("Muvofaqiyatli o'zgartirildi", true, 200);
+    public StateMessage(String text, boolean success) {
+        this.text = text;
+        this.success = success;
     }
 
-    public StateMessage successDelete() {
-        return new StateMessage("Muvofaqiyatli o'chirildi", true, 200);
+    public Integer getCode() {
+        return code;
     }
 
-
-    public StateMessage suchANameExists() {
-        return new StateMessage("Bunday nom bilan ma'lumot mavjud", false, 417);
+    public void setCode(Integer code) {
+        this.code = code;
     }
-    public StateMessage wrongInformation() {
-        return new StateMessage("Ma'vjud bo'lmagan ma'lumot kiritildi", false, 417);
+
+    public StateMessage() {
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public StateMessage parse(Message message){
+        return new StateMessage(message.getName(), message.isState(), message.getCode());
     }
 }

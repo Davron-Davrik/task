@@ -20,7 +20,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.optimal.task.statics.StaticWords.JWT_SECRET_KEY;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
@@ -32,7 +31,6 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
-
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, password);
@@ -42,21 +40,19 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
     @Override
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException {
         User user = (User) authResult.getPrincipal();
-        Algorithm algorithm = Algorithm.HMAC256(JWT_SECRET_KEY.getBytes());
+        Algorithm algorithm = Algorithm.HMAC256("secret_key".getBytes());
         String access_token = JWT.create()
                 .withSubject(user.getUsername())
-                .withExpiresAt(new Date(System.currentTimeMillis() + (10 * 1000)))
-//                .withExpiresAt(new Date(System.currentTimeMillis() + (120 * 1000)))
+                .withExpiresAt(new Date(System.currentTimeMillis() + (60000 * 60 * 48)))
                 .withIssuer(request.getRequestURL().toString())
                 .withClaim("roles", user.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList()))
                 .sign(algorithm);
 
-        String refresh_token = JWT.create()
-                .withSubject(user.getUsername())
-//                .withExpiresAt(new Date(System.currentTimeMillis() + (1200 * 60 * 1000)))
-                .withExpiresAt(new Date(System.currentTimeMillis() + (24 * 60 * 60 * 1000)))
-                .withIssuer(request.getRequestURL().toString())
-                .sign(algorithm);
+//        String refresh_token = JWT.create()
+//                .withSubject(user.getUsername())
+//                .withExpiresAt(new Date(System.currentTimeMillis() + (30 * 60 * 1000)))
+//                .withIssuer(request.getRequestURL().toString())
+//                .sign(algorithm);
 
 //        response.setHeader("access_token",access_token);
 //        response.setHeader("refresh_token",refresh_token);
@@ -64,18 +60,16 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
         HashMap<String, String> body = new HashMap<>();
         List<String> roleCollection = user.getAuthorities().stream().map(GrantedAuthority::getAuthority).toList();
         String role = roleCollection.stream().findFirst().get();
-        body.put("user_role", role);
+        body.put("user_role",role);
         body.put("access_token", access_token);
-        body.put("refresh_token", refresh_token);
-
+//        body.put("refresh_token", refresh_token);
         response.setContentType(APPLICATION_JSON_VALUE);
-
         response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
         response.setHeader("Access-Control-Allow-Credentials", "true");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
         response.setHeader("Access-Control-Max-Age", "3600");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type, Accept, X-Requested-With, remember-me");
-
         new ObjectMapper().writeValue(response.getOutputStream(), body);
     }
+
 }
