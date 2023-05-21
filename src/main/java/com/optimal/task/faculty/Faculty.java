@@ -17,6 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Faculty {
+    
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
