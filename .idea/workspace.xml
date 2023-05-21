@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5305c93e-c19b-44af-9db1-97407bd5b36e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MDvliqAHRgS4weQVUEsEdE9inS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Git hub/task/src/main/java/com/optimal/task/group&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;193b1e10aa1242025683fdec9d36ab94&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git hub\task\src\main\java\com\optimal\task\group" />
+      <recent name="D:\Git hub\task\src\main\java\com\optimal\task" />
+      <recent name="D:\Git hub\task\src\main\java\com\optimal\task\subject" />
+      <recent name="D:\Git hub\project_fergana\src\main\java\com\optimal\fergana" />
+      <recent name="D:\Git hub\project_fergana\src\main\java\com\optimal\fergana\inputOutput" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.optimal.bookstore.controller" />
+      <recent name="com.optimal.bookstore.discount" />
+      <recent name="com.optimal.bookstore.book" />
+      <recent name="com.optimal.bookstore.category" />
+      <recent name="com.optimal.fergana.reporter.pdf" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TaskApplication">
+    <configuration name="TaskApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.optimal.task.TaskApplication" />
+      <module name="fergana" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.optimal.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="fergana" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimal.task.TaskApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TaskApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5305c93e-c19b-44af-9db1-97407bd5b36e" name="Changes" comment="" />
+      <created>1677315123247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677315123247</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/optimal/task/config/RefreshTokenService.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.web.FilterChainProxy$VirtualFilterChain" memberName="originalChain" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((HeaderWriterRequest)request).request" custom="org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterRequest" />
+        <watch expression="((SecurityContextPersistenceFilter)((java.util.ArrayList)((VirtualFilterChain)filterChain).additionalFilters).get(1)).servletContext" custom="org.springframework.security.web.FilterChainProxy.VirtualFilterChain,org.springframework.security.web.context.SecurityContextPersistenceFilter,java.util.ArrayList" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
