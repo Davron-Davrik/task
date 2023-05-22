@@ -34,8 +34,8 @@ public class GroupEntity {
     @UpdateTimestamp
     private Timestamp updateDate;
 
-//    @OneToMany(mappedBy = "groupEntity")
-//    private List<Users> studentList;
+    @OneToMany(mappedBy = "groupEntity")
+    private List<Users> studentList;
 
     @ManyToOne
     private Faculty faculty;

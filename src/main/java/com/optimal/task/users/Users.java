@@ -1,6 +1,8 @@
 package com.optimal.task.users;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.optimal.task.group.GroupEntity;
+import com.optimal.task.mark.Mark;
 import com.optimal.task.role.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -33,6 +35,12 @@ public class Users {
     @JsonIgnore
     @ManyToMany
     private List<Role> roles;
+
+    @ManyToOne
+    private GroupEntity groupEntity;
+
+    @OneToMany(mappedBy = "student")
+    private List<Mark> markList;
 
 
     @UpdateTimestamp

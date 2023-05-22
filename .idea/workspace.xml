@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,30 +44,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Excel (xlsx)",
-    "last_opened_file_path": "D:/Git hub/task/src/main/java/com/optimal/task",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "24de1dc16e3c2a7c68abae268e78ca53",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Excel (xlsx)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Git hub/task/src/main/java/com/optimal/task&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;24de1dc16e3c2a7c68abae268e78ca53&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git hub\task\src\main\java\com\optimal\task" />
@@ -77,14 +77,14 @@
       <recent name="D:\Git hub\home_kindergarten\src\main\java\com\optimal\fergana\statics" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.optimal.task.group" />
+      <recent name="com.optimal.task.faculty" />
+      <recent name="com.optimal.task.university" />
       <recent name="com.optimal.fergana.area" />
       <recent name="com.optimal.fergana.product_price" />
-      <recent name="com.optimal.fergana.area.userPayments" />
-      <recent name="com.optimal.fergana.payme.json" />
-      <recent name="com.optimal.fergana.balance.paymentHistory" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Task">
+  <component name="RunManager" selected="Spring Boot.TaskApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="home_kindergarten" />
       <method v="2">
@@ -105,9 +105,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="home-kinfergarten" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimal.task.Task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimal.task.TaskApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.optimal.task.*" />
@@ -120,7 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Task" />
+        <item itemvalue="Spring Boot.TaskApplication" />
       </list>
     </recent_temporary>
   </component>

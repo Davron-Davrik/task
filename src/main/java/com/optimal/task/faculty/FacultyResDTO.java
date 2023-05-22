@@ -1,8 +1,8 @@
-package com.optimal.task.mark;
+package com.optimal.task.faculty;
 
 
-import com.optimal.task.journal.Journal;
-import com.optimal.task.users.Users;
+import com.optimal.task.group.GroupEntity;
+import com.optimal.task.university.University;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,29 +12,18 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Mark {
+public class FacultyResDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private int score;
-
-    @CreationTimestamp
+    private String name;
     private Timestamp createDate;
-
-    @UpdateTimestamp
     private Timestamp updateDate;
-    
-    @ManyToOne
-    private Users student;
-
-    @ManyToOne
-    private Journal journal;
+    private List<GroupEntity> groupEntityList;
+    private University university;
 }
