@@ -1,4 +1,4 @@
-package com.optimal.task.group;
+package com.optimal.task.subject;
 
 
 import lombok.AllArgsConstructor;
@@ -12,11 +12,10 @@ import java.sql.Timestamp;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupResDTO {
+public class SubjectResDTO {
+
     private Long id;
     private String name;
-    private Integer year;
     private Timestamp createDate;
     private Timestamp updateDate;
-    private int studentNumber;
 }

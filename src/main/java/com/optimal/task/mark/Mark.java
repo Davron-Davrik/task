@@ -2,6 +2,7 @@ package com.optimal.task.mark;
 
 
 import com.optimal.task.journal.Journal;
+import com.optimal.task.subject.Subject;
 import com.optimal.task.users.Users;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -37,4 +38,15 @@ public class Mark {
 
     @ManyToOne
     private Journal journal;
+
+    @ManyToOne
+    private Subject subject;
+
+
+    public Mark(int score, Users student, Journal journal, Subject subject) {
+        this.score = score;
+        this.student = student;
+        this.journal = journal;
+        this.subject = subject;
+    }
 }

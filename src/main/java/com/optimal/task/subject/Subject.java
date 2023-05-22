@@ -1,12 +1,15 @@
 package com.optimal.task.subject;
 
 
+import com.optimal.task.group.GroupEntity;
 import com.optimal.task.journal.Journal;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
@@ -33,6 +36,16 @@ public class Subject {
     @UpdateTimestamp
     private Timestamp updateDate;
 
-    @ManyToMany
-    private List<Journal> journalList;
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Journal journal;
+
+    @ManyToOne
+    private GroupEntity groupEntity;
+
+
+    public Subject(String name, GroupEntity groupEntity) {
+        this.name = name;
+        this.groupEntity = groupEntity;
+    }
 }

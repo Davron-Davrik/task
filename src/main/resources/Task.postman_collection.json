@@ -1,0 +1,3453 @@
+{
+	"info": {
+		"_postman_id": "37b5ee6a-fcf0-434b-9d77-b208abd0893c",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15956348"
+	},
+	"item": [
+		{
+			"name": "University",
+			"item": [
+				{
+					"name": "University qo`shish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"address\": \"Toshkent shaxar\",\r\n  \"name\": \"TATU\",\r\n  \"openYear\": 1998\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/university"
+					},
+					"response": [
+						{
+							"name": "University qo`shish",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"address\": \"Toshkent shaxar\",\r\n  \"name\": \"TATU\",\r\n  \"openYear\": 1998\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/university"
+							},
+							"status": "Expectation Failed",
+							"code": 417,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:13:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Bunday nom bilan ma'lumot mavjud\",\n    \"success\": false,\n    \"code\": 417\n}"
+						}
+					]
+				},
+				{
+					"name": "University o`zgartirish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"address\": \"Toshkent viloyati\",\r\n  \"name\": \"TATU\",\r\n  \"openYear\": 2000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/university/1"
+					},
+					"response": [
+						{
+							"name": "University o`zgartirish",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"address\": \"Toshkent viloyati\",\r\n  \"name\": \"TATU\",\r\n  \"openYear\": 2000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/university/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:15:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'zgartirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Universitetni id bilan olish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8899/api/university/1"
+					},
+					"response": [
+						{
+							"name": "Universitetni id bilan olish",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8899/api/university/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:17:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"TATU\",\n    \"address\": \"Toshkent shaxar\",\n    \"openYear\": 1998,\n    \"createDate\": 1684761220361,\n    \"updateDate\": 1684761220361\n}"
+						}
+					]
+				},
+				{
+					"name": "University barchasini olish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8899/api/university"
+					},
+					"response": [
+						{
+							"name": "University barchasini olish",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8899/api/university"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:17:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"TATU\",\n        \"address\": \"Toshkent shaxar\",\n        \"openYear\": 1998,\n        \"createDate\": 1684761220361,\n        \"updateDate\": 1684761220361\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "University o`chirish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8899/api/university/1"
+					},
+					"response": [
+						{
+							"name": "University o`chirish",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "localhost:8899/api/university/1"
+							},
+							"status": "Expectation Failed",
+							"code": 417,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:21:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Ma'vjud bo'lmagan ma'lumot kiritildi\",\n    \"success\": false,\n    \"code\": 417\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Faculty",
+			"item": [
+				{
+					"name": "Faculty qo`shish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/faculty"
+					},
+					"response": [
+						{
+							"name": "Faculty qo`shish",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/faculty"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:19:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli qo'shildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Faculty O`zgartirish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/faculty/1"
+					},
+					"response": [
+						{
+							"name": "Faculty",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/faculty/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:20:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'zgartirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Faculty O`chirish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/faculty/1"
+					},
+					"response": [
+						{
+							"name": "Faculty O`chirish",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/faculty/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:21:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'chirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Faculty getOneById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/faculty/2"
+					},
+					"response": [
+						{
+							"name": "Faculty getOneById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/faculty/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:22:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Matematika\",\n    \"createDate\": 1684761728071,\n    \"updateDate\": 1684761728071,\n    \"groupEntityList\": null,\n    \"university\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Faculty getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/faculty"
+					},
+					"response": [
+						{
+							"name": "Faculty getAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/faculty/byUniversityId/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:23:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Matematika\",\n        \"createDate\": 1684761728071,\n        \"updateDate\": 1684761728071,\n        \"groupEntityList\": null,\n        \"university\": null\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Fizika\",\n        \"createDate\": 1684761788425,\n        \"updateDate\": 1684761788425,\n        \"groupEntityList\": null,\n        \"university\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Faculty getAllBy UniversityId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/faculty/byUniversityId/2"
+					},
+					"response": [
+						{
+							"name": "Faculty getAllBy UniversityId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Matematika\",\r\n  \"universityId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/faculty/byUniversityId/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:23:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Matematika\",\n        \"createDate\": 1684761728071,\n        \"updateDate\": 1684761728071,\n        \"groupEntityList\": null,\n        \"university\": null\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Fizika\",\n        \"createDate\": 1684761788425,\n        \"updateDate\": 1684761788425,\n        \"groupEntityList\": null,\n        \"university\": null\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Group",
+			"item": [
+				{
+					"name": "Gurux qo`shish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilar\",\r\n  \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/group"
+					},
+					"response": [
+						{
+							"name": "Gurux qo`shish",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilar\",\r\n  \"year\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/group"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:28:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli qo'shildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Gurux  edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/group/1"
+					},
+					"response": [
+						{
+							"name": "Gurux  edit",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/group/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:30:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'zgartirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Group delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/group/1"
+					},
+					"response": [
+						{
+							"name": "Group delete",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/group/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:31:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'chirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Group getOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/group/2"
+					},
+					"response": [
+						{
+							"name": "Group getOne",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/group/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:31:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Bekorchilarr\",\n    \"year\": 2023,\n    \"createDate\": 1684762287674,\n    \"updateDate\": 1684762287674,\n    \"studentNumber\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Gurux  GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/group"
+					},
+					"response": [
+						{
+							"name": "Gurux  GetAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/group"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:34:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Bekorchilarr\",\n        \"year\": 2023,\n        \"createDate\": 1684762287674,\n        \"updateDate\": 1684762287674,\n        \"studentNumber\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Gurux  GetAllBy aFaculty ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/group/byFacultyId/2"
+					},
+					"response": [
+						{
+							"name": "Gurux  GetAllBy aFaculty ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"facultyId\": 2,\r\n  \"name\": \"Bekorchilarr\",\r\n  \"year\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/group/byFacultyId/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:33:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Bekorchilarr\",\n        \"year\": 2023,\n        \"createDate\": 1684762287674,\n        \"updateDate\": 1684762287674,\n        \"studentNumber\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "Fan edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/subject/byStudentId/3"
+					},
+					"response": [
+						{
+							"name": "Fan edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/subject/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:38:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'zgartirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Fan get by StudentId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/subject/byStudentId/3"
+					},
+					"response": [
+						{
+							"name": "Fan get by StudentId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/subject/byStudentId/3"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:40:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Fan delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/subject/2"
+					},
+					"response": [
+						{
+							"name": "Fan delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/subject/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:39:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'chirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Fan qoshish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/subject"
+					},
+					"response": [
+						{
+							"name": "Fan qoshish",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Kimyo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/subject"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:50:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli qo'shildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Journal",
+			"item": [
+				{
+					"name": "Journal add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmat\",\r\n  \"subjectIdList\": [\r\n    1\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/journal"
+					},
+					"response": [
+						{
+							"name": "Journal add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmat\",\r\n  \"subjectIdList\": [\r\n    1\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/journal"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:42:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli qo'shildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Journal edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmat\",\r\n  \"subjectIdList\": [\r\n    1\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/journal/1"
+					},
+					"response": [
+						{
+							"name": "Journal edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmxatt\",\r\n  \"subjectIdList\": [\r\n    1\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/journal/4"
+							},
+							"status": "Expectation Failed",
+							"code": 417,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 13:59:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Ma'vjud bo'lmagan ma'lumot kiritildi\",\n    \"success\": false,\n    \"code\": 417\n}"
+						}
+					]
+				},
+				{
+					"name": "Journal delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmxatt\",\r\n  \"subjectIdList\": [\r\n    1\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/journal/1"
+					},
+					"response": [
+						{
+							"name": "Journal delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmxatt\",\r\n  \"subjectIdList\": [\r\n    1\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/journal/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:02:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'chirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mark",
+			"item": [
+				{
+					"name": "Mark edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"score\": 100,\r\n  \"studentId\": 2,\r\n  \"subjectId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/mark/1"
+					},
+					"response": [
+						{
+							"name": "Mark edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"score\": 100,\r\n  \"studentId\": 2,\r\n  \"subjectId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/mark/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:06:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'zgartirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Mark add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"score\": 100,\r\n  \"studentId\": 5,\r\n  \"subjectId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/mark"
+					},
+					"response": [
+						{
+							"name": "Mark add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"score\": 100,\r\n  \"studentId\": 5,\r\n  \"subjectId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/mark"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:15:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli qo'shildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Mark getAllBy StudentId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"score\": 100,\r\n  \"studentId\": 2,\r\n  \"subjectId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/mark/getAllByStudentId/5"
+					},
+					"response": [
+						{
+							"name": "Mark getAllBy StudentId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"score\": 100,\r\n  \"studentId\": 2,\r\n  \"subjectId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/mark/getAllByStudentId/5"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:16:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 7,\n        \"score\": 100,\n        \"createDate\": 1684764934418,\n        \"updateDate\": 1684764934418,\n        \"student\": {\n            \"id\": 5,\n            \"name\": \"Eshmatov Toshmat\",\n            \"username\": \"Hv6Gh6Lg7\",\n            \"group\": {\n                \"id\": 2,\n                \"name\": \"Bekorchilarr\",\n                \"year\": 2023,\n                \"createDate\": 1684762287674,\n                \"updateDate\": 1684762287674,\n                \"studentNumber\": 5\n            },\n            \"updateDate\": 1684764528819,\n            \"createDate\": 1684764528819,\n            \"faculty\": {\n                \"id\": 2,\n                \"name\": \"Matematika\",\n                \"createDate\": 1684761728071,\n                \"updateDate\": 1684761728071,\n                \"groupEntityList\": null,\n                \"university\": null\n            },\n            \"totalScore\": 600\n        },\n        \"subject\": {\n            \"id\": 2,\n            \"name\": \"Kimyo\",\n            \"createDate\": 1684764180304,\n            \"updateDate\": 1684764191562\n        }\n    },\n    {\n        \"id\": 8,\n        \"score\": 100,\n        \"createDate\": 1684764937182,\n        \"updateDate\": 1684764937182,\n        \"student\": {\n            \"id\": 5,\n            \"name\": \"Eshmatov Toshmat\",\n            \"username\": \"Hv6Gh6Lg7\",\n            \"group\": {\n                \"id\": 2,\n                \"name\": \"Bekorchilarr\",\n                \"year\": 2023,\n                \"createDate\": 1684762287674,\n                \"updateDate\": 1684762287674,\n                \"studentNumber\": 5\n            },\n            \"updateDate\": 1684764528819,\n            \"createDate\": 1684764528819,\n            \"faculty\": {\n                \"id\": 2,\n                \"name\": \"Matematika\",\n                \"createDate\": 1684761728071,\n                \"updateDate\": 1684761728071,\n                \"groupEntityList\": null,\n                \"university\": null\n            },\n            \"totalScore\": 600\n        },\n        \"subject\": {\n            \"id\": 2,\n            \"name\": \"Kimyo\",\n            \"createDate\": 1684764180304,\n            \"updateDate\": 1684764191562\n        }\n    },\n    {\n        \"id\": 9,\n        \"score\": 100,\n        \"createDate\": 1684764938105,\n        \"updateDate\": 1684764938105,\n        \"student\": {\n            \"id\": 5,\n            \"name\": \"Eshmatov Toshmat\",\n            \"username\": \"Hv6Gh6Lg7\",\n            \"group\": {\n                \"id\": 2,\n                \"name\": \"Bekorchilarr\",\n                \"year\": 2023,\n                \"createDate\": 1684762287674,\n                \"updateDate\": 1684762287674,\n                \"studentNumber\": 5\n            },\n            \"updateDate\": 1684764528819,\n            \"createDate\": 1684764528819,\n            \"faculty\": {\n                \"id\": 2,\n                \"name\": \"Matematika\",\n                \"createDate\": 1684761728071,\n                \"updateDate\": 1684761728071,\n                \"groupEntityList\": null,\n                \"university\": null\n            },\n            \"totalScore\": 600\n        },\n        \"subject\": {\n            \"id\": 2,\n            \"name\": \"Kimyo\",\n            \"createDate\": 1684764180304,\n            \"updateDate\": 1684764191562\n        }\n    },\n    {\n        \"id\": 10,\n        \"score\": 100,\n        \"createDate\": 1684764938897,\n        \"updateDate\": 1684764938897,\n        \"student\": {\n            \"id\": 5,\n            \"name\": \"Eshmatov Toshmat\",\n            \"username\": \"Hv6Gh6Lg7\",\n            \"group\": {\n                \"id\": 2,\n                \"name\": \"Bekorchilarr\",\n                \"year\": 2023,\n                \"createDate\": 1684762287674,\n                \"updateDate\": 1684762287674,\n                \"studentNumber\": 5\n            },\n            \"updateDate\": 1684764528819,\n            \"createDate\": 1684764528819,\n            \"faculty\": {\n                \"id\": 2,\n                \"name\": \"Matematika\",\n                \"createDate\": 1684761728071,\n                \"updateDate\": 1684761728071,\n                \"groupEntityList\": null,\n                \"university\": null\n            },\n            \"totalScore\": 600\n        },\n        \"subject\": {\n            \"id\": 2,\n            \"name\": \"Kimyo\",\n            \"createDate\": 1684764180304,\n            \"updateDate\": 1684764191562\n        }\n    },\n    {\n        \"id\": 11,\n        \"score\": 100,\n        \"createDate\": 1684764939816,\n        \"updateDate\": 1684764939816,\n        \"student\": {\n            \"id\": 5,\n            \"name\": \"Eshmatov Toshmat\",\n            \"username\": \"Hv6Gh6Lg7\",\n            \"group\": {\n                \"id\": 2,\n                \"name\": \"Bekorchilarr\",\n                \"year\": 2023,\n                \"createDate\": 1684762287674,\n                \"updateDate\": 1684762287674,\n                \"studentNumber\": 5\n            },\n            \"updateDate\": 1684764528819,\n            \"createDate\": 1684764528819,\n            \"faculty\": {\n                \"id\": 2,\n                \"name\": \"Matematika\",\n                \"createDate\": 1684761728071,\n                \"updateDate\": 1684761728071,\n                \"groupEntityList\": null,\n                \"university\": null\n            },\n            \"totalScore\": 600\n        },\n        \"subject\": {\n            \"id\": 2,\n            \"name\": \"Kimyo\",\n            \"createDate\": 1684764180304,\n            \"updateDate\": 1684764191562\n        }\n    },\n    {\n        \"id\": 12,\n        \"score\": 100,\n        \"createDate\": 1684764940570,\n        \"updateDate\": 1684764940570,\n        \"student\": {\n            \"id\": 5,\n            \"name\": \"Eshmatov Toshmat\",\n            \"username\": \"Hv6Gh6Lg7\",\n            \"group\": {\n                \"id\": 2,\n                \"name\": \"Bekorchilarr\",\n                \"year\": 2023,\n                \"createDate\": 1684762287674,\n                \"updateDate\": 1684762287674,\n                \"studentNumber\": 5\n            },\n            \"updateDate\": 1684764528819,\n            \"createDate\": 1684764528819,\n            \"faculty\": {\n                \"id\": 2,\n                \"name\": \"Matematika\",\n                \"createDate\": 1684761728071,\n                \"updateDate\": 1684761728071,\n                \"groupEntityList\": null,\n                \"university\": null\n            },\n            \"totalScore\": 600\n        },\n        \"subject\": {\n            \"id\": 2,\n            \"name\": \"Kimyo\",\n            \"createDate\": 1684764180304,\n            \"updateDate\": 1684764191562\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Student Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/user"
+					},
+					"response": [
+						{
+							"name": "Student Add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/user"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:10:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli qo'shildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Student edit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/user/4"
+					},
+					"response": [
+						{
+							"name": "Student edit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/user/4"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:10:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'zgartirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Student delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/user/4"
+					},
+					"response": [
+						{
+							"name": "Student delete",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8899/api/user/getAllByGroupId"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:11:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"text\": \"Muvofaqiyatli o'chirildi\",\n    \"success\": true,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Student getAllByGroupId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8899/api/user/getAllByGroupId/2"
+					},
+					"response": [
+						{
+							"name": "Student getAllByGroupId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8899/api/user/search?search=eshmat",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"api",
+										"user",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "eshmat"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:11:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Eshmatov Toshmat\",\n        \"username\": \"Hv6Gh6Lg7\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764528819,\n        \"createDate\": 1684764528819,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Eshmatov Toshmat\",\n        \"username\": \"Dt3Xk3Vn1\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764529709,\n        \"createDate\": 1684764529709,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Eshmatov Toshmat\",\n        \"username\": \"Ur4Fo5St7\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764530691,\n        \"createDate\": 1684764530691,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Eshmatov Tosthmat\",\n        \"username\": \"Wb3Yk6Tc5\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764533667,\n        \"createDate\": 1684764533667,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Eshmatov Tosthmat\",\n        \"username\": \"Ay5If0Ii1\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764644082,\n        \"createDate\": 1684764644082,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Student Search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzNDc4OX0.iDpCFw5QgpBa6UEtiQDCvPIjz7x7vMylYPPHiQ1NpGM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8899/api/user/search?name=eshmat",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"api",
+								"user",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "eshmat"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Student Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"groupId\": 2,\r\n  \"name\": \"Eshmatov Tosthmat\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8899/api/user/search?name=eshmat",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"api",
+										"user",
+										"search"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "eshmat"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 14:13:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Eshmatov Toshmat\",\n        \"username\": \"Hv6Gh6Lg7\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764528819,\n        \"createDate\": 1684764528819,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Eshmatov Toshmat\",\n        \"username\": \"Dt3Xk3Vn1\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764529709,\n        \"createDate\": 1684764529709,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Eshmatov Toshmat\",\n        \"username\": \"Ur4Fo5St7\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764530691,\n        \"createDate\": 1684764530691,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Eshmatov Tosthmat\",\n        \"username\": \"Wb3Yk6Tc5\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764533667,\n        \"createDate\": 1684764533667,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Eshmatov Tosthmat\",\n        \"username\": \"Ay5If0Ii1\",\n        \"group\": {\n            \"id\": 2,\n            \"name\": \"Bekorchilarr\",\n            \"year\": 2023,\n            \"createDate\": 1684762287674,\n            \"updateDate\": 1684762287674,\n            \"studentNumber\": 5\n        },\n        \"updateDate\": 1684764644082,\n        \"createDate\": 1684764644082,\n        \"faculty\": {\n            \"id\": 2,\n            \"name\": \"Matematika\",\n            \"createDate\": 1684761728071,\n            \"updateDate\": 1684761728071,\n            \"groupEntityList\": null,\n            \"university\": null\n        },\n        \"totalScore\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8899/api/login"
+			},
+			"response": [
+				{
+					"name": "University",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "admin",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "admin",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8899/api/login"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, X-Requested-With, remember-me"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "252"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 May 2023 13:10:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODk5L2FwaS9sb2dpbiIsImV4cCI6MTY4NDkzMzgzMH0.gWg1GOU4FHf-dgKeI9HgdvWrGn3lKt60JE2Yo0U0dUU\",\n    \"user_role\": \"ROLE_ADMIN\"\n}"
+				}
+			]
+		}
+	]
+}

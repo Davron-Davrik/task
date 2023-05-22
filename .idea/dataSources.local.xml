@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-223.8617.56">
-    <data-source name="postgres@95.130.227.54" uuid="c6bf88de-388d-43b8-b81e-af2b0b2c8fb2">
-      <database-info product="PostgreSQL" version="14.8 (Debian 14.8-1.pgdg110+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="14.8" exact-driver-version="42.5">
+    <data-source name="task@localhost" uuid="4378d8c2-682d-41dc-889d-fadce6c6ddd4">
+      <database-info product="PostgreSQL" version="14.5" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="14.5" exact-driver-version="42.5">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -10,13 +10,8 @@
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node negative="1">
-            <node kind="database" qname="@">
-              <node kind="schema" qname="@" />
-            </node>
-            <node kind="database" qname="kindergarten">
-              <node kind="schema" qname="public" />
-            </node>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
       </schema-mapping>

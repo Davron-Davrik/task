@@ -1,6 +1,8 @@
-package com.optimal.task.group;
+package com.optimal.task.mark;
 
 
+import com.optimal.task.subject.SubjectResDTO;
+import com.optimal.task.users.UsersResDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,11 +14,12 @@ import java.sql.Timestamp;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupResDTO {
+public class MarkResDTO {
+
     private Long id;
-    private String name;
-    private Integer year;
+    private int score;
     private Timestamp createDate;
     private Timestamp updateDate;
-    private int studentNumber;
+    private UsersResDTO student;
+    private SubjectResDTO subject;
 }

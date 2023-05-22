@@ -24,9 +24,10 @@ public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
+
     private String name;
-    private boolean state;
+    private boolean state = true;
 
     @Column(unique = true)
     private String username;
@@ -50,4 +51,11 @@ public class Users {
     private Timestamp createDate;
 
 
+    public Users(String name, String username, String password, List<Role> roles, GroupEntity groupEntity) {
+        this.name = name;
+        this.username = username;
+        this.password = password;
+        this.roles = roles;
+        this.groupEntity = groupEntity;
+    }
 }

@@ -2,9 +2,9 @@ package com.optimal.task.controller;
 
 
 import com.optimal.task.message.StateMessage;
-import com.optimal.task.users.IUserService;
-import com.optimal.task.users.UsersDTO;
-import com.optimal.task.users.UsersResDTO;
+import com.optimal.task.university.IUniversityService;
+import com.optimal.task.university.UniversityDTO;
+import com.optimal.task.university.UniversityResDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -12,20 +12,20 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/user")
-public class UserController {
+@RequestMapping("/api/university")
+public class UniversityController {
 
-
-    private final IUserService iUserService;
+    private final IUniversityService iUniversityService;
 
     @PreAuthorize("hasAnyRole('ADMIN')")
     @PostMapping
-    public ResponseEntity<?> add(@RequestBody UsersDTO dto) {
+    public ResponseEntity<?> add(@RequestBody UniversityDTO dto) {
         try {
 
-            StateMessage message = iUserService.addStudent(dto);
+            StateMessage message = iUniversityService.add(dto);
             return ResponseEntity.status(message.getCode()).body(message);
 
         } catch (Exception e) {
@@ -35,10 +35,10 @@ public class UserController {
 
     @PreAuthorize("hasAnyRole('ADMIN')")
     @PutMapping("/{id}")
-    public ResponseEntity<?> edit(@PathVariable Long id, @RequestBody UsersDTO dto) {
+    public ResponseEntity<?> edit(@PathVariable Long id, @RequestBody UniversityDTO dto) {
         try {
 
-            StateMessage message = iUserService.editStudent(dto, id);
+            StateMessage message = iUniversityService.edit(dto, id);
             return ResponseEntity.status(message.getCode()).body(message);
 
         } catch (Exception e) {
@@ -51,7 +51,7 @@ public class UserController {
     public ResponseEntity<?> delete(@PathVariable Long id) {
         try {
 
-            StateMessage message = iUserService.deleteStudent(id);
+            StateMessage message = iUniversityService.delete(id);
             return ResponseEntity.status(message.getCode()).body(message);
 
         } catch (Exception e) {
@@ -60,13 +60,16 @@ public class UserController {
     }
 
     @PreAuthorize("hasAnyRole('ADMIN')")
-    @GetMapping("/search")
-    public ResponseEntity<?> search(@RequestParam("name") String name) {
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getOne(@PathVariable Long id) {
         try {
 
-            List<UsersResDTO> list = iUserService.searchByName(name);
-
-            return ResponseEntity.status(200).body(list);
+            UniversityResDTO dto = iUniversityService.getOne(id);
+            if (dto == null) {
+                StateMessage message = new StateMessage().wrongInformation();
+                return ResponseEntity.status(message.getCode()).body(message);
+            }
+            return ResponseEntity.status(200).body(dto);
 
         } catch (Exception e) {
             return ResponseEntity.status(e.hashCode()).body(e.getMessage());
@@ -74,11 +77,11 @@ public class UserController {
     }
 
     @PreAuthorize("hasAnyRole('ADMIN')")
-    @GetMapping("/getAllByGroupId/{id}")
-    public ResponseEntity<?> getAll(@PathVariable Long id) {
+    @GetMapping()
+    public ResponseEntity<?> getAll() {
         try {
 
-            List<UsersResDTO> list = iUserService.getAllByGroupId(id);
+            List<UniversityResDTO> list = iUniversityService.getAll();
 
             return ResponseEntity.status(200).body(list);
 
